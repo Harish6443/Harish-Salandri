@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    function sortArrayDescending(arr) {
+    
+    const sortedArray = arr.sort((a, b) => b - a);
+
+    return sortedArray;
+}
+
+const inputArray = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+const sortedDescendingArray = sortArrayDescending(inputArray);
+document.write(sortedDescendingArray);
+
+ </script>   
+</body>
+</html>

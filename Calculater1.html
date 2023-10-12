@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgb(215, 210, 210);
+        }
+        button{
+            padding: 25px;
+            border: none;
+            color: aliceblue;
+        }
+        #ip{
+           padding-left: 6px;
+           padding-top: 25px;
+           padding-bottom:25px ;
+           padding-right:10px ;
+           border: none;
+            
+        }
+        #ac{
+            background-color: rgb(102, 207, 207);
+        }
+        #i{
+            background-color: black;
+        }
+        #ii{
+            background-color: rgb(92, 88, 88);
+            
+        }
+        .k{
+            padding-right: 28px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <center>
+        <h2>Calculator</h2>
+        <div >
+            <br>
+    <table>
+        <td><tr colspan="3" > <input placeholder="0" id="ip" ><button id="ac" onclick="ip.value=''">Ac</button></td></tr>
+        
+        <tr>
+            <td ><button id="i" onclick="ip.value+='9'">9</button></td>
+            <td ><button id="i" onclick="ip.value+='8'">8</button></td>
+            <td  ><button id="i" onclick="ip.value+='7'">7</button></td>
+            <td ><button id="ii" onclick="ip.value+='+'">+</button></td>
+           
+        </tr>
+        <tr>
+            <td ><button id="i" onclick="ip.value+='4'">4</button></td>
+            <td ><button id="i" onclick="ip.value+='5'">5</button></td>
+            <td ><button id="i" onclick="ip.value+='6'">6</button></td>  
+            <td ><button  id="ii" class="k" onclick="ip.value+='-'">-</button></td>        
+        </tr>
+        <tr>
+            <td  ><button id="i" onclick="ip.value+='1'">1</button></td>
+            <td ><button id="i" onclick="ip.value+='2'">2</button></td>
+            <td><button id="i" onclick="ip.value+='3'">3</button></td>
+            <td ><button id="ii" class="k" onclick="ip.value+='/'">/</button></td>
+           
+        </tr>
+        <tr>
+            <td  ><button id="i" onclick="ip.value+='.'">.</button></td>
+            <td  ><button id="i" onclick="ip.value+='0'">0</button></td>
+            <td onclick="ip.value=eval(ip.value)" ><button id="i" >=</button></td>
+            <td ><button id="ii" onclick="ip.value+='*'">*</button></td>   
+        </tr>
+    </table>
+</div>
+</center>
+</body>
+</html>
